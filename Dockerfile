@@ -8,4 +8,4 @@ RUN rm -rf /tmp/*
 VOLUME /app
 WORKDIR /app
 EXPOSE 3000
-CMD [ "meteor" ]
+CMD [ "meteor", "run", "--allow-superuser"]
