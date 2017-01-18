@@ -1,9 +1,9 @@
-FROM node:4-slim
+FROM node:6-slim
 
-RUN apt-get update && apt-get install -y curl python build-essential unzip && apt-get clean
+RUN apt-get update && apt-get install -y curl python build-essential build-essential git openjdk-7-jdk unzip && apt-get clean
 
 RUN curl -sL https://install.meteor.com | /bin/sh
-RUN rm -rf /tmp/*
+RUN npm install -g chimp@0.35.0 phantomjs-prebuilt
 
 VOLUME /app
 WORKDIR /app
