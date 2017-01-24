@@ -8,6 +8,6 @@ VOLUME /app
 WORKDIR /app
 RUN curl -sL https://install.meteor.com | /bin/sh
 
-ENV PATH $HOME/.meteor:$PATH
+ENV PATH /home/node/.meteor:$PATH
 EXPOSE 3000
 CMD [ "meteor", "run"]
