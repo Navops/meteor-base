@@ -1,4 +1,4 @@
-FROM node:4-slim
+FROM node:8-slim
 
 RUN echo $'\n94.31.29.131 warehouse.meteor.com\n' >> /etc/hosts
 
